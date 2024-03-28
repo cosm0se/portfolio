@@ -1,0 +1,22 @@
+footer {
+    min-height: 150px;
+    background-color: var(--purple);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+footer #mentions li {
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+
+
+}
+footer #mentions li a {
+    padding: 10px;
+    color: #fff;
+
+}

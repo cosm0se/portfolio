@@ -1,0 +1,115 @@
+section {
+    display: flex;
+    align-items: center;
+}
+
+#about {
+    padding-bottom: 150px;
+    padding-top:150px;
+    display: flex;
+}
+#description{
+    width: 60%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    justify-content: space-evenly;
+
+}
+#description h1 {
+    font-size: 1.7rem;
+    color: var(--purple);
+    letter-spacing: 0.4rem;
+    padding-bottom: 50px;
+}
+#description p{
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-bottom: 50px;
+}
+
+#description button{
+    align-self: flex-end;
+    
+}
+#description #more {
+    text-decoration: none;
+    font-family: "Square Sans Serif 7";
+    border: none;
+    padding: 15px;
+    background-color: var(--purple);
+    color: #fff;
+    width: 150px;
+    display: block;
+    transition: all 0.4s;
+}
+
+#more:hover {
+    background-color: orange;
+}
+#rightimg {
+
+    width: 40%;
+
+    background-image: url(/app/img/Cosmose_-_Recherches-06.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#rightimg div {
+    height: 500px;
+    width: 500px;
+
+}
+
+
+@media only screen and (max-width:1366px) {
+    #about {
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+    
+    #description {
+        min-height: 600px;
+        padding:50px;
+    }
+    #description h1 {
+        padding-bottom: 20px;
+        font-size: 1.3rem;
+        letter-spacing: 0.2rem;
+    }
+    #description p {
+        padding-bottom: 20px;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    section{
+        flex-direction: column-reverse;
+    }
+
+    #description {
+        min-height: 400px;
+        width: 100%;
+    }
+    #description h1 {
+      font-size: 1.2rem;
+      letter-spacing: 0.1rem;
+      }
+      #description p {
+        font-size: 0.8rem;
+      }
+      #rightimg {
+        margin-top: 50px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+  
+    #nav ul {
+      display: none;
+    }
+  }
+  
+

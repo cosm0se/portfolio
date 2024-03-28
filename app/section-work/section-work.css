@@ -1,0 +1,44 @@
+#works {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 800px;
+}
+#works h3 {
+    padding: 100px 100px;
+}
+#exit {
+    align-self: flex-end;
+}
+#pick {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction:row-reverse;
+
+}
+#pick div {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    background-color: var(--purple);
+    justify-content: center;
+    align-items: center;
+}
+#pick a {
+    background-color: var(--purple);
+    font-size: 3rem;
+    color: #fff;
+}
+
+@media screen and (max-width:1366px) {
+    #pick div {
+        height: 300px;
+        width: 300px;
+    }
+    #pick a {
+        font-size: 2rem;
+    }
+}

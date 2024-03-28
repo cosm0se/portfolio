@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+#php service
+  php:
+    build: "./docker_php"
+
+    #environment:
+    #  - name=value
+    volumes:
+      - ./app:/var/www/html
+# le serveur
+  apache:
+    build: "./docker_apache"
+    depends_on:
+      - php
+    ports:
+      - "8088:80"
+    volumes:
+      - ./app:/var/www/html
+# service pour la base de données
+
+  mariadb:
+    image: mariadb:11.2
+    env_file:
+      - .env
+    volumes:
+      - database:/var/lib/mysql
+    ports:
+      - "3307:3306"
+# Graphique BDD
+
+  phpmyadmin:
+    image: phpmyadmin
+    ports: 
+      - "8007:80"
+    env_file:
+      - .env
+    depends_on:
+      - mariadb
+
+#notre volume nommé
+volumes: 
+  database:
+
+#reseau
+
+networks:
+  default:
+  Lamp:

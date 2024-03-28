@@ -1,0 +1,68 @@
+header {
+  display: flex;
+  background-color: var(--purple);
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+#nav ul li {
+  display: block;
+  padding: 40px 50px;
+  transition: all 0.4s;
+
+}
+
+#nav ul li:hover {
+  background-color: orange;
+}
+
+#nav ul li a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all 0.4s;
+}
+
+#nav ul li a:hover {
+}
+#nav #hamburger {
+  display: none;
+}#hamburger svg{
+  color: #fff;
+}
+
+/* pc laptop*/
+
+@media screen and (max-width: 1366px) {
+  header {
+    max-height: 50px;
+  }
+  #nav ul li {
+    display: inline-block;
+    padding: 15px 20px;
+    transition: all 0.4s;
+  }
+  #nav ul li:hover {
+    background-color: orange;
+  }
+  #nav ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+  }
+  #nav ul li a:hover {
+    color: orange;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #nav #hamburger {
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    
+  }
+}

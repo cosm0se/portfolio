@@ -1,0 +1,66 @@
+@import "./footer/footer.css)";
+@import "./header/header.css";
+@import "./section-about/section-about.css";
+@import "./parralaxe/parralaxe.css";
+@import "./section-work/section-work.css";
+@import "./footer/footer.css";
+
+@font-face {
+  font-family: "Square Sans Serif 7";
+  src: local("app/fonts/Square Sans Serif 7.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --purple: #5e4595;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  /* width: 100%; */
+  font-family: "Square Sans Serif 7";
+  font-size: 1rem;
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--purple);
+}
+h3 {
+  font-size: 1.7rem;
+  color: var(--purple);
+  letter-spacing: 10px;
+}
+p {
+  font-family: monospace;
+}
+
+
+#exit {
+  text-decoration: none;
+  font-family: "Square Sans Serif 7";
+  border: none;
+  padding: 15px;
+  background-color: #fff;
+  color: var(--purple);
+  width: 150px;
+  display: block;
+  transition: all 0.4s;
+}
+
+#exit:hover {
+  background-color: var(--purple);
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+
